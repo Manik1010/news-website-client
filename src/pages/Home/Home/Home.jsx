@@ -6,7 +6,7 @@ const Home = () => {
     const [newsdatas, setNewsdatas] = useState([])
 
     useEffect( ()=>{
-        fetch('http://localhost:4000/news')
+        fetch('https://the-news-dragon-server-manik1010.vercel.app/news')
         .then( res => res.json())
         // .then( data => console.log(data))
         .then( data => setNewsdatas(data))
